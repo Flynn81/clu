@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/pkg/profile"
+)
 
 func main() {
-    fmt.Println("Hello, World!")
+	defer profile.Start().Stop()
+	fmt.Println("Hello, World!")
 }
