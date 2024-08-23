@@ -1,7 +1,9 @@
 package api
 
 import (
+	//"io/fs"
 	"testing"
+	//"testing/fstest"
 )
 
 func IntMin(a, b int) int {
@@ -17,3 +19,18 @@ func TestIntMinBasic(t *testing.T) {
 		t.Errorf("IntMin(2, -2) = %d; want -2", ans)
 	}
 }
+
+// func TestVisitDirectory(t *testing.T) {
+// 	// Create a mock filesystem with a single file
+// 	mockFS := fstest.MapFS{
+// 		"test.txt": {Data: []byte("Hello, World!")},
+// 	}
+
+// 	// Use the mock filesystem
+// 	data, err := fs.ReadFile(mockFS, "test.txt")
+// 	if err != nil {
+// 		panic(err)
+// 	}
+
+// 	println(string(data)) // Output: Hello, World!
+// }
