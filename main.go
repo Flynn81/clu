@@ -12,5 +12,5 @@ func main() {
 	fmt.Println("Hello, World!")
 
 	w := api.BasicWalker{}
-	w.Walk(".")
+	w.Walk("./")
 }
